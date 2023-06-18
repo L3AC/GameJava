@@ -33,7 +33,7 @@ private JButton button;
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, e.toString());
+                JOptionPane.showMessageDialog(null, "Me atrapaste");
                 button.setLocation(0, 0);
             }
         });
