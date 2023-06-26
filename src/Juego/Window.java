@@ -1,27 +1,32 @@
 
 package Juego;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class Window extends javax.swing.JFrame {
+    
+    
 private JButton button;
 
     public Window() {
+        this.getContentPane().setBackground(Color.GREEN);
         initComponents();
         setTitle("Evita el botón");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
         
-        button = new JButton("Haz clic aquí");
-        button.setPreferredSize(new Dimension(100, 100));
+        button = new JButton("Atrapame");
+        button.setPreferredSize(new Dimension(85, 85));
         button.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
