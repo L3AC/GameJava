@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 
 public class Window extends javax.swing.JFrame {
     
-    
+   String hola;
 private JButton button;
 
     public Window() {
@@ -26,7 +26,7 @@ private JButton button;
         setLayout(new FlowLayout());
         
         button = new JButton("Atrapame");
-        button.setPreferredSize(new Dimension(85, 85));
+        button.setPreferredSize(new Dimension(60, 60));
         button.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
